@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking.com clone</title>
+  <link rel="stylesheet" href="style.css">
+<!--   font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<!--   SVG ICON -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  
+   <script src="https://kit.fontawesome.com/3bf8c869a3.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+  
+  <nav>
+    <h1 class="logo">Booking.com</h1>
+    <ul class="services">
+      <li><a href="" class="active">Stays</a></li>
+      <li><a href="">Flight</a></li>
+      <li><a href="">Flight + Hotel</a></li>
+      <li><a href="">Car rentals</a</li>
+      <li><a href="">Attractions</a></li>
+      <li><a href="">Airport taxis</a></li>
+    </ul>
+        <ul class="user_info">
+          <li><a href="" class="H_a">INR</a></li>
+          <li><button href="" class="H_a link_btn"><img class="language"src="https://www.unigreet.com/wp-content/uploads/2022/08/india-3599154__340.webp" alt=""></button></li>
+          <li><button href="" class="H_a link_btn"><i class="bi bi-question-circle icon"></i></button></li>
+          <li><a href="" class="H_a">List Your Priority</a></li>
+          <li><a href="" class="nav_btns">Register</a></li>
+          <li><a href="" class="nav_btns">Sign in</a></li>
+        </ul>
+    
+  </nav>
+<!--     HERO SECTION -->
+    <section class="hero_section">
+      <div class="hero_content">
+      <h1>Ski the Swiss Alps this winter</h1>
+      <p>Discover Switzerland's best ski resorts and plan the perfect holiday</p>
+      <button class="hero_btn"><a href="">
+        Explore the slopes
+      </a></button>
+        </div>
+   <!--       TAble Section -->
+       <table class="heroTable" cellspacing="0.2">
+        <tr><td class="place"> <input type="text" value="Where are you going?" placeholder="Where are you going?" class="placeIn" onclick="remove()"></td>
+        <td class="check_in"><input type="calender" class="CheckIn" value="Check in-Check out " readonly></td>
+        <td><input type="text" class="whoIn" value="2 adults . 0 Children . 1 room" readonly></td></tr>
+      </table>
+    </section>
+<!--  SECTION 2 -->
+    <section class="secondSec">
+      <input type="checkbox" class="checkbox">
+      <label for="" class="checkboxLabel">I'm travelling for work.</label>
+      <p class="secondSecPara">Get the advice you need. Check the latest COVID-19 restrictions before you travel. <a href="#">Learn more</a></p>
+      <h2>Offers</h2>
+      <p class="offerP">Promotions, deals and special offers for you</p>
+<!--////////////////CARDS SECTION///////////////-->
+      <div class="flexBox"> 
+        <button class="backBtn" onclick="previousCard()"><</button>
+      <div class="card1">
+        
+        <div class="cardImg">
+        <img class="flightImg"src="https://r-xx.bstatic.com/xdata/images/xphoto/500x500/184698944.jpeg?k=7652b7b65903f21464b812d3eca387f9a7e0241b1df0b4ebe981ba95df4b254c&o=" alt="">
+        </div>
+        <div class="cardContent">
+        <h4>Fly away to your dream holiday</h4>
+        <p>Get inspired, compare and book flights with more flexibility</p>
+         <button>Search for flights</button>
+          </div>
+      </div>
+      
+      <div class="monthly_stay">
+        <h4>Escape for a while</h4>
+        <p>Enjoy the freedom of a monthly stay on Booking.com</p>
+        <button>Discover monthly stays</button>
+      </div>
+          <button class="forwardBtn" onclick="previousCard()">></button>
+          </div>
+        
+<!--//////////PROPERTY SECTION////////-->
+        
+        <div class="properties">
+        <h2>Browse by property type
+</h2>
+        <div class="flexBox">
+         
+          <div class="view">
+            <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x240/57584488.jpeg?k=d8d4706fc72ee789d870eb6b05c0e546fd4ad85d72a3af3e30fb80ca72f0ba57&o=" alt="">
+            <div class="view_content">
+              <h4>Hotels</h4>
+              <p>932,027 hotels</p>
+            </div>
+          </div>
+          
+                    <div class="view">
+            <img src="https://r-xx.bstatic.com/xdata/images/hotel/300x240/119467716.jpeg?k=f3c2c6271ab71513e044e48dfde378fcd6bb80cb893e39b9b78b33a60c0131c9&o=" alt="">
+            <div class="view_content">
+              <h4>Apartments</h4>
+              <p>921,987 apartments</p>
+            </div>
+          </div>
+          
+                    <div class="view">
+            <img src="https://r-xx.bstatic.com/xdata/images/xphoto/300x240/45450084.jpeg?k=f8c2954e867a1dd4b479909c49528531dcfb676d8fbc0d60f51d7b51bb32d1d9&o=" alt="">
+            <div class="view_content">
+              <h4>Resorts</h4>
+              <p>18,556 resorts</p>
+            </div>
+          </div>
+          
+<!--                     <div class="view">
+            <img src="https://r-xx.bstatic.com/xdata/images/hotel/300x240/100235855.jpeg?k=5b6e6cff16cfd290e953768d63ee15f633b56348238a705c45759aa3a81ba82b&o=" alt="">
+            <div class="view_content">
+              <h5></h5>
+              <p></p>
+            </div>
+          </div>
+           -->
+                  
+        </div>
+          </div>
+        
+        <div class="flexBox">
+            <div class="newDelhi"><h2>New Delhi</h2></div>
+            <div class="dubai"><h2>Dubai</h2></div>
+  
+        </div>
+        
+         <div class="flexBox">
+            <div class="Jaipur"><h2>Jaipur</h2></div>
+            <div class="Mumbai"><h2>Mumbai</h2></div>
+          
+            <div class="Guangzhou"><h2>Guangzhou</h2></div>
+        </div>
+        <div class="exploreIndia">
+        
+        <h2>Explore India</h2>
+        <p>These popular destinations have a lot to offer</p>
+          <div class="flexBox">
+            <div class="exploreContent">
+            <img src="https://q-xx.bstatic.com/xdata/images/region/250x250/49646.jpg?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o=" alt="" class="explorImg">
+              <h5>Goa</h5>
+              <p>5,243 properties</p>
+              </div>
+          <div class="exploreContent">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/250x250/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o=" alt="" class="explorImg">
+            <h5>Mumbai</h5>
+            <p>1,650 properties</p>
+            </div>
+            
+              <div class="exploreContent">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/250x250/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o=" alt="" class="explorImg">
+                <h5>New Delhi</h5>
+                <p>2,914 properties</p>
+            </div>
+            
+              <div class="exploreContent">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/250x250/684657.jpg?k=66dc5035b43e9bb86b756e381e4fec2558064af4a63a8af17836725a854c03ee&o=" alt="" class="explorImg">
+                <h5>Jaipur</h5>
+                <p>1,559 properties</p>
+            </div>
+            
+              <div class="exploreContent">
+            <img src="https://q-xx.bstatic.com/xdata/images/region/250x250/68606.jpg?k=4b43b9128b79beaab4ca2e8c038ddf5709b0b90608afbca222cfbe08fabda7d2&o=" alt="" class="explorImg">
+                <h5>North Goa</h5>
+                <p>3,902 properties</p>
+            </div>
+            
+              <div class="exploreContent">
+            <img src="https://r-xx.bstatic.com/xdata/images/city/250x250/684534.jpg?k=d1fe86c22f2433f4e2dda14ddcbe80feb024b0fb30305e5684a1241fba5d4cff&o=" alt="" class="explorImg">
+                <h5>Banglore</h5>
+                <p>2,041 properties</p>
+            </div>
+         
+          </div>
+          </div>
+        
+<!--         Popular destinations by month -->
+        <div class="popularPlace">
+          <h2>Popular destinations by month</h2>
+          <p>Travellers from India are loving these places
+</p>
+          <ul class="services popularPlaces">
+      <li><a href="" class="activeM">January</a></li>
+      <li><a href="">February</a></li>
+      <li><a href="">March</a></li>
+      <li><a href="">April</a</li>
+      <li><a href="">May</a></li>
+      <li><a href="">June</a></li>
+    </ul>
+        <div class="flexBox">
+          <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/city/300x240/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o=" alt="" class="popularImg">
+            <h4>New Delhi, India</h4>
+          </div>
+          
+          
+          <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/city/300x240/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o=" alt="" class="popularImg">
+            <h4>Mumbai, India</h4>
+          </div>
+            
+            
+          <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/city/300x240/684822.jpg?k=8e3dfdbe7474b16f993bead046bb1d3d329cdd68c6aee6ec72c8e935ba426a9f&o=" alt="" class="popularImg">
+            <h4>Pune, India</h4>
+          </div>
+              
+              
+          <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/city/300x240/684653.jpg?k=306ccafcc8a4a7e23b9e8a05b183453fe885b312a4daa5ce76ec39a1b79cbc6f&o=" alt="" class="popularImg">
+            <h4>Hyderabad, India</h4>
+          </div>
+                
+              
+          <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/city/300x240/619932.jpg?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&o=" alt="" class="popularImg">
+            <h4>Dubai, United Arab Emirates</h4>
+          </div>
+                  
+                
+          <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/city/300x240/684622.jpg?k=f9eacb40b8f7c8560afc74cdcfe2e7028e5117a36a0d8d3356f735ea3ac20f4f&o=" alt="" class="popularImg">
+            <h4>Gurgaon, India</h4>
+          </div>
+          
+        </div>
+        </div>
+          
+<!--           Quick and easy trip planner -->
+          
+          <div class="easyTrip">
+            <h2>Quick and easy trip planner</h2>
+            <p class="greyPara">Pick a vibe and explore the top destinations in India</p>
+             <ul class="services popularPlaces">
+      <li><a href="" class="activeM">Romance</a></li>
+      <li><a href="">Beach</a></li>
+      <li><a href="">City</a></li>
+               <li><a href="">Outdoors</a></li>
+        </ul>
+        <div class="flexBox">
+          
+          <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140051567.jpg?k=348b977d5741b78a2c38e6d2eb9b87993c81f400d86ec32d9651b72e4d8fc919&o=" alt="" class="easyImg">
+            <h4>Noida</h4>
+            <p class="greyPara">21 km away</p>
+          </div>
+          
+           <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140052560.jpg?k=b32d07dd10e5a1f8005c51a60aaca909f0233b0a9641d9a27432202f2325f9cb&o=" alt="" class="easyImg">
+            <h4>Greater Noida</h4>
+            <p class="greyPara">35 km away</p>
+          </div>
+          
+           <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018207.jpg?k=e450b3e64b76c469e6d119760463eaca26a95f7fd9187fa1422cff0a5cbd4308&o=" alt="" class="easyImg">
+            <h4>Neemrana</h4>
+            <p class="greyPara">111 km away</p>
+          </div>
+          
+           <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018354.jpg?k=70699a4be36413620673c996c786b660f03c686f3e2f827fc7b4a6605e936f51&o=" alt="" class="easyImg">
+            <h4>Alwar</h4>
+            <p class="greyPara">136 km away</>
+          </div>
+          
+           <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018283.jpg?k=05921d4dff1da26013954f0c5d0b028e32179ff9b75e70e65fa385c5b490fc0c&o=" alt="" class="easyImg">
+            <h4>Haridwar</h4>
+            <div class="greyPara">167 km away</div>
+          </div>
+          
+           <div class="popularContent">
+            <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018212.jpg?k=6abb28c7ed6c81c4af72ddaf74616f7cf3bff99d092c2a5fbf195572a67c7398&o=" alt="" class="easyImg">
+            <h4>Nainital</h4>
+            <p class="greyPara">237 km away</p>
+          </div>
+        </div>
+          </div>
+            
+<!--             Get inspiration for your next trip -->
+            <h2>Get inspiration for your next trip</h2>
+            <div class="flexBox">
+              <div class=" bigImg">
+                <div class="bottomContent">
+             <h3>Top places in Japan to see cherry blossom.</h3> 
+                <p>For picture-perfect pink scenes and picnics, head to Japan for sakura season </p>
+                  </div>
+              </div>
+              <div class="card2 card21">
+               <div class="card2img1 backgroundClass"></div>
+                <h4>Where to experience spring break in the US</h4>
+                <p class="greyPara">Featuring frosty mountain hot springs and white sand beaches with parties...</p>
+              </div>
+              
+                <div class="card2 card22">
+               <div class="card2img2 backgroundClass"></div>
+                <h4>48 hours in Rome, Italy</h4>
+                <p class="greyPara">The perfect 2-day itinerary for visiting the Eternal City.</p>
+              </div>
+            </div>
+            
+<!--             Stay at our top unique properties -->
+            <h2>Stay at our top unique properties</h2>
+            <p class="greyPara">From castles and villas to boats and igloos, we've got it all</p>
+            <div class="flexBox">
+              <div class="uniqueHotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/286659200.webp?k=9206fc9239b3e4538c22d04b85213d6d5e6257015022de8a37effd956fcde4b6&o=&s=1" alt="">
+                <h4>La Roulotte de Ciney</h4>
+                <p class="greyPara">Belgium, Ciney</p>
+                <p class="smallPara"><span class="span1">8.4</span> Very good <span class="span2 greyPara smallPara">· 87 reviews</span></p>
+              </div>
+              
+                 <div class="uniqueHotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/280950287.webp?k=b984c542b8b1a2ee0e019e4491da338a85b660caa10c5e1197225c5f3052d629&o=&s=1" alt="">
+                   <h4>Wierszyki Shelters</h4>
+                <p class="greyPara">Poland, Zakopane</p>
+                <p class="smallPara"><span class="span1">9.2</span>
+Exceptional <span class="span2 greyPara smallPara">· 91 reviews </span></p>
+              </div>
+              
+              <div class="uniqueHotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/132452060.webp?k=8448bab55c87dbb42ab7c6643fbbce542124c908f63f6b36dc3cdc859e60cb0a&o=&s=1" alt="">
+                   <h4>Ranczo w Dolinie</h4>
+                <p class="greyPara">Poland, Kiszkowo</p>
+                <p class="smallPara"><span class="span1">9.5</span>
+Exceptional  <span class="span2 greyPara smallPara">· 218 reviews</span></p>
+              </div>
+              
+              <div class="uniqueHotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/187855604.webp?k=bbb45aa5b540c7608ea3af52d92b95a215df9af831dd3ae0e4c4cce501e28b1b&o=&s=1" alt="">
+                   <h4>Tiny House Dreischwesternherz</h4>
+                <p class="greyPara">Germany, Trier</p>
+                <p class="smallPara"><span class="span1">9.6</span>
+Exceptional  <span class="span2 greyPara smallPara">· 136 reviews</span></p>
+              </div>
+              
+             
+            </div>
+<!--             Homes guests love -->
+            
+            <h2>Homes guests love</h2>
+            <div class="flexBox">
+             <div class="uniqueHotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/421852968.webp?k=f3889222c82f4a8e3783dddb5f1cc04d6140eeb2d5cb8297817a15aacfe4d191&o=&s=1" alt="">
+                   <h4>3 Epoques Apartments by Prague Residences</h4>
+                <p class="greyPara">Prague 1, Czech Republic, Praha 1
+Starting from
+₹ 5,141</p>
+                <p class="smallPara"><span class="span1">8.7</span>
+Fabulous <span class="span2 greyPara smallPara">· 404 reviews </span></p>
+              </div>
+              
+              <div class="uniqueHotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/44146554.webp?k=bc461f3aff9a66c15ddae3b3a7e10a44f6aea550cb89ce292cec7ca0b4ccecdb&o=&s=1" alt="">
+                   <h4>7Seasons Apartments Budapest</h4>
+                <p class="greyPara">Split City Centre, Croatia, Split
+Starting from
+₹ 4,003</p>
+                <p class="smallPara"><span class="span1">9.4</span>
+
+Superb <span class="span2 greyPara smallPara">· 1,029 reviews </span></p>
+              </div>
+              
+              <div class="uniqueHotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/87428762.webp?k=9a065fcd92168145d8c8358701662c76793535597b678efc8f6921c8e3c188e6&o=&s=1" alt="">
+                   <h4>7Seasons Apartments Budapest</h4>
+                <p class="greyPara">06. Terézváros, Hungary, Budapest
+Starting from
+₹ 7,258</p>
+                <p class="smallPara"><span class="span1">8.8</span>
+Fabulous  <span class="span2 greyPara smallPara">· 7,254 reviews</span></p>
+              </div>
+              
+              <div class="uniqueHotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/352170812.webp?k=75ffc5f9eb3f3cc394b901714c1544757b05849dbbdf30e4fc8c6df53931c131&o=&s=1" alt="">
+                   <h4>numa I Vita Apartments</h4>
+                <p class="greyPara">Fortezza da Basso, Italy, Florence
+Starting from
+₹ 8,539</p>
+                <p class="smallPara"><span class="span1">9.3</span>
+Superb  <span class="span2 greyPara smallPara">· 869 reviews</span></p>
+              </div>
+          </div>
+            
+<!--             Connect with other travellers -->
+            <h2>Connect with other travellers</h2>
+            <div class="flexBox">
+              <div class="connectContent">
+                <img src="https://cf.bstatic.com/static/img/communities/cover-photo/300x300/china/b336fe512a2f2cff1741fd8968e530e307ea3a70.jpg" alt="">
+                <h4>China</h4>
+                <p class="greyPara">Travel community</p>
+                <p  class="greyPara">55,399 travellers</p>
+              </div>
+              
+                <div class="connectContent">
+                <img src="https://cf.bstatic.com/static/img/communities/cover-photo/300x300/india/e4f4cf85c7a3c87ad369dc3da2a7774957dae913.jpg" alt="">
+                <h4>India</h4>
+                <p class="greyPara">Travel community
+</p>
+                <p  class="greyPara">155,073 travellers</p>
+              </div>
+              
+                <div class="connectContent">
+                <img src="https://cf.bstatic.com/static/img/communities/cover-photo/300x300/united-arab-emirates/3ce95de2072ecbfaeada635ce37095f1d80fc42a.jpg" alt="">
+                <h4>United Arab Emirates
+</h4>
+                <p class="greyPara">Travel community</p>
+                <p  class="greyPara">Travel community</p>
+              </div>
+              
+                <div class="connectContent">
+                <img src="https://cf.bstatic.com/static/img/communities/cover-photo/300x300/travel-discussions/f43b42664bbf44f174b44c64fd71440b4af56888.jpg" alt="">
+                <h4>Travel Discussions</h4>
+                <p class="greyPara">View forum
+</p>
+                <p  class="greyPara">559,436 travellers</p>
+              </div>
+              
+            </div>
+        
+<!--             Instant discount -->
+            <div class="instantDiscount">
+              <img src="https://cf.bstatic.com/static/img/genius-globe-with-badge_desktop/d807514761b3684aedebced9265c5548a063b7a0.png" alt="">
+              <h2>Get instant discounts</h2>
+              <p>Simply sign into your Booking.com account and look for the blue Genius logo to save</p>
+              <a href="" class="activea">Sign in</a>
+              <a href="">Register</a>
+            </div>
+            
+<!--             Destinations we love -->
+
+            <h2>Destinations we love
+ </h2>
+         <ul class="services popularPlaces">
+      <li><a href="" class="activeM">Regions</a></li>
+      <li><a href="">Cities</a></li>
+      <li><a href="">Place of intrests</a></li>
+     
+        </ul>
+            
+            <div class="flexBox flexBoxul">
+              <ul>
+                <li>
+                  <p>Bihar</p>
+                  <p class="greyPara">761 properties</p>
+                </li>
+                <li>
+                  <p>Isle of Wight
+</p>
+                  <p class="greyPara">934 properties</p>
+                </li>
+                <li>
+                  <p >Guernsey</p>
+                  <p class="greyPara">61 properties</p>
+                   <li>
+                <p>Jersey
+</p>
+                <p class="greyPara">89 properties</p>
+              </li>
+                </li>
+              </ul>
+   
+              <ul>
+                <li>
+                  <p>Santorini
+</p>
+                  <p class="greyPara">1,762 properties</p>
+                </li>
+                <li>
+                  <p>Hawaii
+</p>
+                  <p class="greyPara">5,515 properties</p>
+                </li>
+                <li>
+                  <p>Lake District
+</p>
+                  <p class="greyPara">2,403 properties</p>
+                </li>
+                 <li>
+                <p>Jersey
+</p>
+                <p class="greyPara">89 properties</p>
+              </li>
+              </ul>
+             
+                <ul>
+                <li>
+                  <p>Texel
+</p>
+                  <p class="greyPara">411 properties</p>
+                </li>
+                <li>
+                  <p>Zanzibar
+</p>
+                  <p class="greyPara">834 properties</p>
+                </li>
+                <li>
+                  <p>Phuket Province
+</p>
+                  <p class="greyPara">5,495 properties</p>
+                </li>
+                 <li>
+                  <p>Cornwall
+</p>
+                  <p class="greyPara">5,275 properties</p>
+                </li>
+              </ul>
+              
+                <ul>
+                <li>
+                  <p>Bali
+</p>
+                  <p class="greyPara">12,678 properties</p>
+                </li>
+                <li>
+                  <p>Ras Al Khaimah
+</p>
+                  <p class="greyPara">113 properties</p>
+                </li>
+                <li>
+                  <p>Ibiza
+</p>
+                  <p class="greyPara">1,640 properties</p>
+                </li>
+                 <li>
+                  <p>Bora Bora
+
+</p>
+                  <p class="greyPara">59 properties</p>
+                </li>
+              </ul>
+              
+                <ul>
+                <li>
+                  <p>Uttar Pradesh
+</p>
+                  <p class="greyPara">4,373 properties</p>
+                </li>
+                <li>
+                  <p>Mykonos
+</p>
+                  <p class="greyPara">1,452 properties</p>
+                </li>
+                <li>
+                  <p>Tenerife
+</p>
+                  <p class="greyPara">9,602 properties</p>
+                </li>
+                 
+              </ul>
+            </div>
+    </section>
+        
+      hello
+</body>
+</html>
+<!--      <div class="footer">
+         <div class="top_footer">
+           <h2>Save time, save money!</h2>
+<p>Sign up and we'll send the best deals to you</p>
+           <input type="text" placeholder="Your email address"><label for="text">
+             <button>Subscribe</button>
+           </label>
+         </div>
+       </div> -->
