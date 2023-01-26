@@ -1,0 +1,501 @@
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+overflow-x:hidden;}
+/* nav section */
+nav{
+  background-color:#00337C;
+  color:white;
+}
+.logo{
+  padding-top:30px;
+  padding-left:50px;
+  font-size:23px;
+  
+}
+.services{
+  list-style:none;
+  display:flex;
+  gap:5px;
+  padding-left:40px;
+  padding-top:25px;
+  padding-bottom:20px;
+}
+.services li a{
+  text-decoration:none;
+  color:white;
+  padding:10px 20px;
+}
+.services li a.active{
+  border:1px solid white;
+  border-radius:25px;
+   background:rgba(76, 175, 80, 0.1);
+  
+}
+.services li a:hover
+{
+ background:rgba(76, 175, 80, 0.1);
+  
+ border:1px solid rgba(76, 175, 80, 0.1);
+  border-radius:25px;
+}
+.user_info{
+  list-style:none;
+  display:flex;
+  gap:10px;
+  position:absolute;
+  top:42px;
+  right:10px;
+}
+.user_info li a{
+  text-decoration:none;
+  color:white;
+  padding:10px 10px;
+  font-size:12px;
+  letter-spacing:1px;
+  font-weight:500;
+
+}
+.user_info li a.H_a:hover{
+  background:rgba(76, 175, 80, 0.1);
+  
+ border:1px solid rgba(76, 175, 80, 0.1);
+}
+.icon{
+  font-size:20px;
+}
+.language{
+ width:30px; 
+
+  
+}
+.link_btn{
+  background-color:#00337C;
+  border:none;
+  color:white;
+  position:relative;
+  
+}
+.link_btn:hover{
+   background:rgba(76, 175, 80, 0.1);
+  
+ border:1px solid rgba(76, 175, 80, 0.1);
+}
+.bedIcon{
+
+}
+.nav_btns{
+  background-color:white;
+  color:#00337C !important;
+  border:2px solid #00337C;
+}
+/* HERO_SECTION */
+.hero_section{
+  background-image:url("https://q-xx.bstatic.com/xdata/images/xphoto/2880x750/186278537.jpeg?k=115cdd62c5bcd037323172f127d26d7cf7e3fc6ea81047e95e26e44bff008f5d&o=");
+  background-repeat:no-repeat;
+  background-size:100% 350px;
+  width:100%;
+  height:380px;
+  color:white;
+  letter-spacing:2px;
+  line-height:1.5;
+}
+.hero_section h1{
+  
+  font-size:45px;
+  width:450px;
+  font-weight:700;
+}
+.hero_content{
+  padding:30px 0 0 105px;
+}
+.hero_content p{
+  font-size:20px;
+  width:500px;
+  letter-spacing:0;
+}
+.hero_btn a{
+  text-decoration:none;
+  color:white;
+  font-size:15px;
+  
+}
+.hero_btn{
+  color:white;
+  background-color:#0071c2;
+  padding: 15px 15px;
+  border:none;
+  margin-top:25px;
+}
+.hero_btn:hover{
+  cursor:pointer;
+  background-color:#205295;
+}
+/* Css */
+.heroTable{
+  cell-spacing:0;
+}
+.heroTable td{
+  font-size:15px;
+}
+.heroTable td.place{
+ 
+  border-right:0px;
+}
+.placeIn{
+   padding:12px 150px 12px 10px;
+  margin:0;
+   border:none;
+}
+.check_in{
+  border-right:0px;
+  
+}
+input{
+   transition:0.1s ease-in;
+  outline:none;
+}
+input:hover{ box-shadow:1px 1px 1px 1px yellow inset,
+  -1px -1px 1px 1px yellow inset;
+  cursor:pointer;
+}
+.CheckIn,.whoIn{
+   padding:12px 25px 12px 20px;
+  border:none;
+}
+.whoIn{
+  width:180px;
+}
+.heroTable td{
+   border:4px solid #dbc300;
+  margin-left:0;
+  padding:0;
+ 
+  letter-spacing:1px;
+  
+ 
+}
+.heroTable{
+  margin-top:35px;
+  margin-left:95px;
+}
+/* SECOND SECTION */
+.secondSec{
+  margin-left:95px;
+  margin-top:10px;
+  height:700px;
+}
+.checkbox{
+  width:20px;
+  height:17px;
+}
+.secondSecPara{
+  margin-top:20px;
+  border:1px solid #DFDFDE;
+  box-shadow:0.1px 0.1px 0.1px 0.1px;
+  margin-right:125px;
+  padding:15px 10px 15px 20px;
+}
+/* CARD SECTION */
+.flightImg{
+  width:150px;
+  float:right;
+  position:absolute;
+  left:475px;
+  padding-left:2px;
+  margin-top:-30px;
+  mix-blend-mode:color;
+
+}
+.secondSec h2{
+  margin-top:20px;
+}
+.offerP{
+  margin-top:5px;
+  color:grey;
+}
+.card1,.monthly_stay{
+  
+ border:none;
+  width:500px;
+  padding:30px 20px 20px;
+ 
+  
+}
+.monthly_stay{
+  background-image:url("https://q-xx.bstatic.com/xdata/images/xphoto/714x300/184699273.jpeg?k=503e088a7d417c30217b5109dda404d2c2050001588cf7a45fca63e3363573de&o=");
+  background-size:400px;
+  background-repeat:no-repeat;
+  color:white;
+}
+.card1{
+   border-radius:10px;
+ box-shadow:1px 1px 12px -10px,-1px -1px 12px -10px;
+}
+.cardContent button,.monthly_stay button{
+  padding:10px 7px;
+  border:none;
+  margin-top:15px;
+  color:white;
+  background-color:#0071c2;
+}
+.cardContent p,.monthly_stay p{
+  margin-top:5px;
+  line-height:1.3;
+  width:350px;
+}
+.flexBox{
+  margin-top:10px;
+  display:flex;
+  gap:20px;
+  position:relative;
+}
+.backBtn,.forwardBtn{
+  height:40px;
+  width:40px;
+  border-radius:60%;
+  border:none;
+  background-color:#F5F5F5;
+position:absolute;
+    top:80px;
+  display:none;
+}
+.backBtn:hover,.forwardBtn:hover{
+  background-color:#EFEFEF;
+  cursor:pointer;
+}
+.forwardBtn{
+  right:50px;
+}
+.backBtn{
+  left:-20px;
+}
+
+/*////////// PROPERTY SECTION //////////*/
+
+.view,.exploreIndia{
+  margin-top:20px;
+}
+.view:hover{
+  cursor:pointer;
+}
+.view p,.exploreIndia p,.popularPlace p,.greyPara{
+  color:grey;
+  font-size:15px;
+  margin-top:5px;
+}
+
+.newDelhi{
+  background-image:url("https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2017/10/25/Pictures/_5dad3302-b959-11e7-83cc-689513d74e1b.jpg");
+  background-repeat:no-repeat;
+  background-size:500px;
+  width:500px;
+  height:285px;
+  color:white;
+  margin-top:20px;
+  border:1px solid ;
+  
+}
+.dubai{
+  background-image:url("https://assets.churchofjesuschrist.org/56/d2/56d24a8d1a707d71913711669b3b2276477b2275/beach_city_oceans.jpeg");
+   background-repeat:no-repeat;
+  background-size:480px 285px;
+  width:480px;
+  height:285px;
+  color:white;
+  margin-top:20px;
+  border:1px solid ;
+}
+.newDelhi h2,.dubai h2,.Jaipur h2,.Mumbai h2,.Guangzhou h2{
+  margin-left:20px;
+}
+.newDelhi:hover,.dubai:hover,.Jaipur:hover,.Mumbai:hover,.Guangzhou:hover{
+ border-color:yellow;
+  cursor:pointer;
+}
+.Jaipur{
+  background-image:url("https://thumbs.dreamstime.com/b/beautiful-amber-fort-jaipur-rajasthan-india-beautiful-amber-fort-jaipur-rajasthan-india-101086514.jpg");
+  background-size:300px 230px; 
+  height:230px;
+  width:300px;
+  color:white;
+   border:1px solid ;
+}
+.Mumbai{
+  background-image:url("https://media.gettyimages.com/id/114133606/photo/view-of-the-powai-lake.jpg?s=612x612&w=0&k=20&c=5a_QCmIz6d2KC57uhcNAPb5ZeZI1th0wdikxAFH642w=");
+    background-size:300px 230px; 
+  height:230px;
+  width:300px;
+  color:white;
+ border:1px solid ;
+  
+}
+.Guangzhou{
+  background-image:url("https://www.fluentu.com/blog/travel/wp-content/uploads/sites/37/2018/08/best-places-to-live-in-china-e1535305195280.jpg");
+   background-size:300px 230px; 
+  background-repeat:no-repeat;
+  height:230px;
+  width:300px;
+  color:white;
+   border:1px solid ;
+  
+}
+
+.explorImg{
+  width:180px;
+  height:150px;
+  margin-top:10px;
+}
+.exploreContent:hover,.popularContent:hover{
+  cursor:pointer;
+}
+
+/* Popular destinations by month */
+
+.popularPlaces{
+ 
+  padding-left:0;
+}
+.popularPlaces li a{
+  color:black;
+  font-size:12px;
+}
+.activeM{
+  border:1px solid blue;
+  border-radius:25px;
+  color:blue!important;
+}
+.popularImg{
+  width:150px;
+  height:130px;
+}
+h4{
+  margin-top:10px;
+}
+
+.easyImg{
+  width:150px;
+  height:180px;
+}
+
+/* Get inspiration for your next trip */
+.bigImg{
+  background-image:url("https://bstatic.com/data/xphoto/1182x887/152/15284196.jpg?size=S");
+  background-repeat:no-repeat;
+  background-size:500px 300px;
+
+  height:300px;
+  width:500px;
+  position:relative;
+
+  
+}
+.bottomContent{
+ position:absolute;
+  bottom:10px;
+  color:white;
+ 
+}
+.bottomContent h4{
+  width:100%;
+}
+.bottomContent p{
+  margin-top:5px;
+font-size:14px;
+  font-weight:700;
+}
+/* CARD2 */
+.card2img1{
+ background-image:url("https://cf.bstatic.com/xdata/images/xphoto/540x405/191423597.webp?k=3ea22bafb472a2a2d51a98a0c321f61581a55327ac9e68f933510909d7664c4d&o=");
+ 
+  
+}
+.card21 h4{
+  width:250px;
+}
+.card21 p{
+  width:300px;
+}
+.backgroundClass{
+   background-repeat:no-repeat;
+  background-size:300px 200px;
+  height:200px;
+  width:300px;
+}
+.card2img2{
+  background:url("https://cf.bstatic.com/xdata/images/xphoto/540x405/188230751.webp?k=fda8afccc595289d56c0df5ad636313b3a1863838c4bc4f6b0ae71635c9fc61f&o=");
+}
+.card22 p{
+  width:300px;
+}
+
+/* UNIQUE HOTELS */
+.uniqueHotel img,.connectContent img{
+  width:250px;
+  height:200px;
+}
+.uniqueHotel:hover,.connectContent:hover{
+  cursor:pointer;
+}
+.smallPara{
+  margin-top:8px;
+  font-size:12px;
+}
+.span1{
+  border:1px solid #00337C;
+  padding:3px;
+  margin-right:5px;
+  border-radius:10% 20% 0 10%;
+  background-color:#00337C;
+  color:white;
+}
+
+/* INSTANT DISCOUNT */
+.instantDiscount{
+  margin-top:70px;
+  margin-bottom:80px;
+}
+.instantDiscount img{
+  float:left;
+}
+.activea{
+  border:1px solid blue;
+}
+.instantDiscount a{
+  text-decoration:none;
+  color:blue;
+  margin-right:10px;
+ padding:5px 10px;
+}
+.instantDiscount p{
+  width:600px;
+  margin-top:10px;
+  margin-bottom:20px;
+}
+
+ul{
+  list-style:none;
+}
+
+/* UL LISTS */
+.flexBoxul{
+  gap:50px;
+  
+}
+.flexBoxul li{
+  margin-bottom:10px;
+}
+.flexBoxul li .greyPara{
+  font-size:12px;
+}
+
+/* Footer Section */
+.footer{
+  height:500px;
+  width:100%;
+  position:absolute;
+  bottom:0;
+}
