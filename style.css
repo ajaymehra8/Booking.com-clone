@@ -213,9 +213,9 @@ td button{
   width:150px;
   float:right;
   position:absolute;
-  left:275px;
-  padding-left:2px;
-  margin-top:-30px;
+  left:375px;
+ 
+  margin-top:-20px;
   mix-blend-mode:color;
 
 }
@@ -334,6 +334,10 @@ position:absolute;
   width:350px;
   color:white;
    border:1px solid ;
+ 
+}
+.Jaipur h2,.Mumbai h2,.Guangzhou h2{
+   filter:brightness(50%);
 }
 .Mumbai{
   background-image:url("https://media.gettyimages.com/id/114133606/photo/view-of-the-powai-lake.jpg?s=612x612&w=0&k=20&c=5a_QCmIz6d2KC57uhcNAPb5ZeZI1th0wdikxAFH642w=");
@@ -342,7 +346,7 @@ position:absolute;
   width:350px;
   color:white;
  border:1px solid ;
-  
+  filter:grayscale(20%);
 }
 .Guangzhou{
   background-image:url("https://www.fluentu.com/blog/travel/wp-content/uploads/sites/37/2018/08/best-places-to-live-in-china-e1535305195280.jpg");
@@ -520,4 +524,7 @@ ul{
   width:100%;
   position:absolute;
   bottom:0;
+}
+.gapping{
+  margin-top:20px;
 }
